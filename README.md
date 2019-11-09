@@ -13,7 +13,7 @@
 
 <b>Perintah SQL
 	
-	SELECT tb_name.name, tb_work.name, tb_salary.salary FROM tb_name LEFT JOIN (tb_work, tb_salary) ON (tb_work.id=tb_name.id_work AND tb_salary.id=tb_name.id_salary) WHERE 1
+	SELECT tb_cashier.name AS cashier, tb_product.name AS product, tb_category.name AS category, tb_product.price AS price FROM tb_product LEFT JOIN (tb_category, tb_cashier) ON (tb_category.id=tb_product.id_category AND tb_cashier.id=tb_product.id_cashier) WHERE 1
 
 	(menggunakan MariDB)
 <b>
