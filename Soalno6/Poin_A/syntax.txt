@@ -1,0 +1,1 @@
+SELECT tb_cashier.name AS cashier, tb_product.name AS product, tb_category.name AS category, tb_product.price AS price FROM tb_product LEFT JOIN (tb_category, tb_cashier) ON (tb_category.id=tb_product.id_category AND tb_cashier.id=tb_product.id_cashier) WHERE 1
