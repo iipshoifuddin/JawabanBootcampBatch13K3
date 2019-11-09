@@ -1,4 +1,3 @@
-<pre>
 <?php
 function createMatrix($ordo_matrix)
 {
